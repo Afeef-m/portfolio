@@ -60,6 +60,10 @@ body {
     transform: scale(1.1)
 }
 
+
+
+
+
 /* about section */
 .main2{
     color: white;
@@ -97,7 +101,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10%;
-    
+    flex-wrap: wrap;
   }
   
   
@@ -117,4 +121,23 @@ body {
 }
 .btn1{
   border-radius: 20px;
+}
+
+
+@media (max-width: 576px) {
+  .home1 img {
+    width: 60%;
+  }
+
+  .home1 .font, .abo {
+    font-size: 1.5rem;
+  }
+
+  .para, .para2 {
+    font-size: 16px;
+  }
+
+  .btn1 {
+    margin: 15px;
+  }
 }

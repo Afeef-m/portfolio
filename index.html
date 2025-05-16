@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="index.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -25,7 +27,7 @@
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" > 
             <span class="navbar-toggler-icon "></span>
-          </button> 
+          </button>
       
            <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -45,22 +47,27 @@
 <main id="home" class="home1">
     <div class="main1 jumbotronn text-center">
 
-    <img src="photo_me.jpg" alt="my photo" width="20%" style="border-radius: 50px;">
+     <!-- photo -->
+      <img src="photo_me.jpg" alt="my photo" class="img-fluid rounded" style="max-width: 200px;">
+
+    <!-- <img src="photo_me.jpg" alt="my photo" width="20%" style="border-radius: 50px;"> -->
 
   <h5 class="fn p-3">Hi, My name is</h5>
   <h2 class="font fst-italic p-2"> AFEEF M</h2>
   <p class="para"><b> Welcome to my portfolio!</b><br> Here you'll find a showcase of my work in <b> Web Developer</b>. Enjoy exploring!</p>
 
   <div class="icons1">
-    <a href="mailto:your-afeefmaliyekkal14@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></a></i>
-    <a href="http://www.linkedin.com/in/afeef-m" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></a></i>
-    <a href="https://www.instagram.com/afeef._.m?igsh=YzZuZThhYTB0dHR2" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></a></i>
-    <a href="https://wa.me/+918330052135" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
+    <a href="mailto:your-afeefmaliyekkal14@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    <a href="http://www.linkedin.com/in/afeef-m" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/afeef._.m?igsh=YzZuZThhYTB0dHR2" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://wa.me/+918330052135" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
    </div>
 
 
    <div class="btn1">
-    <a href="" class="btn btn-outline-light btn-lg">Contact Me</a>
+    <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+
+    <!-- <a href="" class="btn btn-outline-light btn-lg">Contact Me</a> -->
   </div>
 
  
@@ -90,7 +97,8 @@
       <li class="list-group ">Software Developer Intern</li> 
     </ul>
   </div>
-
+  </div>
+ </div>
 </section>
 
 
@@ -124,25 +132,25 @@
 <section id="contact">
   <h2 class="chead jumbotronn text-center">Contact</h2>
   <form class="forms" action="https://formsubmit.co/afeefmaliyekkal14@gmail.com" method="POST">
-    <nav class="forms ">
+    <div class="forms ">
       <div class="form1">
     <div class="mb-3 p-4 col-6">
     <label for="exampleInputEmail1" class="form-label">Name</label>
-    <input type="text" class="form-control" id="exampleInputText1">
+    <input type="text" name="name" class="form-control" id="exampleInputText1">
     </div>
 
     <div class="mb-3 p-4 col-6">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1">
     </div>
 
     <div class="mb-3 p-4 col-6">
       <label for="exampleFormControlTextarea1" class="form-label">Messege</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
     <button type="submit" class="btn1  btn-black bg-white m-4">Submit</button>
   </div>
-  </nav>
+  </div>
 
   </form>
 </section>

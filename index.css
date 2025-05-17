@@ -100,7 +100,7 @@ body {
     
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 10px;
     flex-wrap: wrap;
   }
   
